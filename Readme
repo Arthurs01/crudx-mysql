@@ -1,0 +1,16 @@
+npm i init -y
+npm i nodemon
+npm i express
+npm i mysql2 
+npm i ejs
+
+https://boxicons.com/
+
+npx nodemon app   o    nodemon .\app.js
+
+y luego 
+
+nodemon app  //para ejecutar una vez 
+
+
+
