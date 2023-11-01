@@ -38,11 +38,12 @@ router.post('/update', crud.update);
 //ELIMINAR Registro
 router.get('/delete/:id', (req, res)=>{
     const id = req.params.id;
-    connection.query('DELETE FROM producto  WHERE id= ?', [id], (error, results)=>{
+     const eliminar = connection.query('DELETE FROM producto  WHERE id= ?', [id], (error, results)=>{
         if(error){
             throw error;
         }else{
-            res.redirect('/index.ejs');
+            null
+            res.redirect('/');
         
             
         }
